@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eq6-r9-MKE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bira.ttf">
+            <string>Bira-PERSONALUSEONLY</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="Blp-eW-z0m">
+            <objects>
+                <viewController id="0hj-9w-LMy" customClass="SplashViewController" customModule="Beer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="59x-xa-5zz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P2J-V7-6ta">
+                                <rect key="frame" x="-12.5" y="133.5" width="400" height="400"/>
+                                <color key="backgroundColor" red="0.27450980390000002" green="0.19215686269999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="Scg-bz-bv9"/>
+                                    <constraint firstAttribute="width" constant="400" id="Xai-GZ-ALr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8T-eb-AzT">
+                                <rect key="frame" x="117" y="124" width="141.5" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5NZ-sE-YSo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Bira-PERSONALUSEONLY" family="Bira PERSONAL USE ONLY" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.27450980390000002" green="0.19215686269999999" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f8T-eb-AzT" firstAttribute="top" secondItem="4Kv-wc-rbI" secondAttribute="top" constant="60" id="bdn-rS-E1H"/>
+                            <constraint firstItem="P2J-V7-6ta" firstAttribute="centerY" secondItem="59x-xa-5zz" secondAttribute="centerY" id="cV6-ft-Iyh"/>
+                            <constraint firstItem="P2J-V7-6ta" firstAttribute="centerX" secondItem="59x-xa-5zz" secondAttribute="centerX" id="j4a-r2-moe"/>
+                            <constraint firstItem="f8T-eb-AzT" firstAttribute="centerX" secondItem="59x-xa-5zz" secondAttribute="centerX" id="tn2-Vi-3Fd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Kv-wc-rbI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ir8-mj-g85"/>
+                    <connections>
+                        <outlet property="animatedView" destination="P2J-V7-6ta" id="Ndr-tn-uiZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="It9-ob-07q" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="972" y="65.217391304347828"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Kl5-td-qvu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eq6-r9-MKE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XuY-s8-isr">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0hj-9w-LMy" kind="relationship" relationship="rootViewController" id="JC0-a7-V7e"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d6l-4d-9Bi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="65.217391304347828"/>
+        </scene>
+    </scenes>
+</document>

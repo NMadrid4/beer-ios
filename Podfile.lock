@@ -1,0 +1,43 @@
+PODS:
+  - Alamofire (4.7.3)
+  - Cloudinary (2.4.0):
+    - Alamofire (~> 4.7.2)
+  - Hero (1.3.1)
+  - lottie-ios (2.5.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SwiftyJSON (4.2.0)
+  - TransitionButton (0.5.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - Cloudinary (~> 2.0)
+  - Hero
+  - lottie-ios
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON (~> 4.0)
+  - TransitionButton
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Cloudinary
+    - Hero
+    - lottie-ios
+    - SDWebImage
+    - SwiftyJSON
+    - TransitionButton
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  Cloudinary: d87b545d6a5d00c4022bec964839fdaf359d7c53
+  Hero: 1c3c625ba05856f305d29f5c270f8766c5ff2df7
+  lottie-ios: d699fdee68d7b63e721d949388b015fef1aaa4ac
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  TransitionButton: 20f92b3cc726b047e4df200fdab5307f33395a81
+
+PODFILE CHECKSUM: d7697b8a03912883c8297cb3907b5609f9f9a74a
+
+COCOAPODS: 1.5.3
